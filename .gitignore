@@ -1,0 +1,7 @@
+# 环境变量文件
+.env
+.env.*
+!.env.example
+
+# 你的输出目录
+output/

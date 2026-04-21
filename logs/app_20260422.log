@@ -1,0 +1,74 @@
+2026-04-22 00:29:37.051 | INFO     | node_pdf_to_md.py   :<module>       :336  - ===== 开始node_pdf_to_md节点单元测试 =====
+2026-04-22 00:29:37.172 | INFO     | node_pdf_to_md.py   :<module>       :339  - 测试获取根地址：D:\PycharmProjects\IT_Assistant
+2026-04-22 00:29:37.172 | INFO     | node_pdf_to_md.py   :step_1_validate_paths:51   - [step_1_validate_paths] 输出目录不存在，自动创建：D:\PycharmProjects\IT_Assistant\output
+2026-04-22 00:29:37.173 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:68   - [配置校验] MinerU基础配置加载成功，开始处理文件：hl3070使用说明书.pdf
+2026-04-22 00:29:37.537 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:96   - [获取上传链接] 成功，batch_id：1d801c99-7b3f-44a2-ac59-ec4865d2b192，上传链接已生成
+2026-04-22 00:29:37.538 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:99   - [文件上传] 开始读取PDF文件：hl3070使用说明书.pdf
+2026-04-22 00:29:39.451 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:118  - [文件上传] 成功，文件hl3070使用说明书.pdf已存入云存储
+2026-04-22 00:29:39.452 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:130  - [任务轮询] 开始监控任务状态，batch_id：1d801c99-7b3f-44a2-ac59-ec4865d2b192，最大超时：600s
+2026-04-22 00:29:43.113 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:171  - [任务轮询] 解析任务完成！总耗时：3s，batch_id：1d801c99-7b3f-44a2-ac59-ec4865d2b192
+2026-04-22 00:29:43.113 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:175  - [任务轮询] 结果ZIP包下载链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-03-16/26691fe4-e68e-4214-9c28-5b570ef58b8f.zip...
+2026-04-22 00:29:43.117 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:197  - ===== 开始处理[hl3070使用说明书]的MinerU解析结果 =====
+2026-04-22 00:29:43.117 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:200  - [步骤1/4] 开始下载ZIP包，链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-03-16/26691fe4-e68e-4214-9c28-5b570ef58b8f.zip...
+2026-04-22 00:29:45.308 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:209  - [步骤1/4] ZIP包下载成功，保存路径：D:\PycharmProjects\IT_Assistant\output\hl3070使用说明书_result.zip
+2026-04-22 00:29:45.309 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:212  - [步骤2/4] 开始解压ZIP包...
+2026-04-22 00:29:45.521 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:230  - [步骤2/4] ZIP包解压完成，解压目录：D:\PycharmProjects\IT_Assistant\output\hl3070使用说明书
+2026-04-22 00:29:45.522 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:233  - [步骤3/4] 开始查找解压目录中的MD文件...
+2026-04-22 00:29:45.524 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:237  - [步骤3/4] 共找到1个MD文件，按优先级匹配目标文件
+2026-04-22 00:29:45.524 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:252  - [步骤4/4] 匹配到优先级2目标：MinerU默认文件 full.md
+2026-04-22 00:29:45.525 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:261  - [步骤4/4] 开始重命名MD文件，统一为PDF同名：hl3070使用说明书.md
+2026-04-22 00:29:45.526 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:268  - [步骤4/4] MD文件重命名成功：hl3070使用说明书.md
+2026-04-22 00:29:45.526 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:274  - ===== [hl3070使用说明书]解析结果处理完成，最终MD文件路径：D:\PycharmProjects\IT_Assistant\output\hl3070使用说明书\hl3070使用说明书.md =====
+2026-04-22 00:29:45.529 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :307  - 【node_pdf_to_md】MD文件生成成功，路径：D:\PycharmProjects\IT_Assistant\output\hl3070使用说明书\hl3070使用说明书.md
+2026-04-22 00:29:45.530 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :317  - 【node_pdf_to_md】节点执行完成，更新后工作流状态键：['task_id', 'is_pdf_read_enabled', 'is_md_read_enabled', 'is_normal_split_enabled', 'is_silicon_flow_api_enabled', 'is_advanced_split_enabled', 'is_vllm_enabled', 'local_dir', 'local_file_path', 'pdf_path', 'md_path', 'file_title', 'split_path', 'embeddings_path', 'md_content', 'chunks', 'item_name', 'embeddings_content']
+2026-04-22 00:29:45.531 | INFO     | node_pdf_to_md.py   :<module>       :353  - ===== 结束node_pdf_to_md节点单元测试 =====
+2026-04-22 01:00:08.714 | INFO     | node_pdf_to_md.py   :<module>       :336  - ===== 开始node_pdf_to_md节点单元测试 =====
+2026-04-22 01:00:08.839 | INFO     | node_pdf_to_md.py   :<module>       :340  - 测试获取根地址：D:\PycharmProjects\IT_Assistant
+2026-04-22 01:00:08.840 | INFO     | node_pdf_to_md.py   :<module>       :352  - 
+===== 处理第 1 个 PDF =====
+2026-04-22 01:00:08.840 | INFO     | node_pdf_to_md.py   :<module>       :355  - 当前测试PDF：D:\PycharmProjects\IT_Assistant\doc\hak180产品安全手册.pdf
+2026-04-22 01:00:08.841 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:68   - [配置校验] MinerU基础配置加载成功，开始处理文件：hak180产品安全手册.pdf
+2026-04-22 01:00:09.200 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:96   - [获取上传链接] 成功，batch_id：3acbfcf0-6f94-4429-b0d7-d874536d0395，上传链接已生成
+2026-04-22 01:00:09.200 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:99   - [文件上传] 开始读取PDF文件：hak180产品安全手册.pdf
+2026-04-22 01:00:09.637 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:118  - [文件上传] 成功，文件hak180产品安全手册.pdf已存入云存储
+2026-04-22 01:00:09.638 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:130  - [任务轮询] 开始监控任务状态，batch_id：3acbfcf0-6f94-4429-b0d7-d874536d0395，最大超时：600s
+2026-04-22 01:00:13.308 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:171  - [任务轮询] 解析任务完成！总耗时：3s，batch_id：3acbfcf0-6f94-4429-b0d7-d874536d0395
+2026-04-22 01:00:13.308 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:175  - [任务轮询] 结果ZIP包下载链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-04-09/251c9137-0a2a-45da-9275-3ec4dec8a751.zip...
+2026-04-22 01:00:13.311 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:197  - ===== 开始处理[hak180产品安全手册]的MinerU解析结果 =====
+2026-04-22 01:00:13.312 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:200  - [步骤1/4] 开始下载ZIP包，链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-04-09/251c9137-0a2a-45da-9275-3ec4dec8a751.zip...
+2026-04-22 01:00:13.775 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:209  - [步骤1/4] ZIP包下载成功，保存路径：D:\PycharmProjects\IT_Assistant\output\hak180产品安全手册_result.zip
+2026-04-22 01:00:13.776 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:212  - [步骤2/4] 开始解压ZIP包...
+2026-04-22 01:00:13.785 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:230  - [步骤2/4] ZIP包解压完成，解压目录：D:\PycharmProjects\IT_Assistant\output\hak180产品安全手册
+2026-04-22 01:00:13.785 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:233  - [步骤3/4] 开始查找解压目录中的MD文件...
+2026-04-22 01:00:13.786 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:237  - [步骤3/4] 共找到1个MD文件，按优先级匹配目标文件
+2026-04-22 01:00:13.787 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:252  - [步骤4/4] 匹配到优先级2目标：MinerU默认文件 full.md
+2026-04-22 01:00:13.787 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:261  - [步骤4/4] 开始重命名MD文件，统一为PDF同名：hak180产品安全手册.md
+2026-04-22 01:00:13.788 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:268  - [步骤4/4] MD文件重命名成功：hak180产品安全手册.md
+2026-04-22 01:00:13.789 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:274  - ===== [hak180产品安全手册]解析结果处理完成，最终MD文件路径：D:\PycharmProjects\IT_Assistant\output\hak180产品安全手册\hak180产品安全手册.md =====
+2026-04-22 01:00:13.790 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :307  - 【node_pdf_to_md】MD文件生成成功，路径：D:\PycharmProjects\IT_Assistant\output\hak180产品安全手册\hak180产品安全手册.md
+2026-04-22 01:00:13.791 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :317  - 【node_pdf_to_md】节点执行完成，更新后工作流状态键：['task_id', 'is_pdf_read_enabled', 'is_md_read_enabled', 'is_normal_split_enabled', 'is_silicon_flow_api_enabled', 'is_advanced_split_enabled', 'is_vllm_enabled', 'local_dir', 'local_file_path', 'pdf_path', 'md_path', 'file_title', 'split_path', 'embeddings_path', 'md_content', 'chunks', 'item_name', 'embeddings_content']
+2026-04-22 01:00:13.791 | INFO     | node_pdf_to_md.py   :<module>       :352  - 
+===== 处理第 2 个 PDF =====
+2026-04-22 01:00:13.792 | INFO     | node_pdf_to_md.py   :<module>       :355  - 当前测试PDF：D:\PycharmProjects\IT_Assistant\doc\LJ2680DN用户手册.pdf
+2026-04-22 01:00:13.793 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:68   - [配置校验] MinerU基础配置加载成功，开始处理文件：LJ2680DN用户手册.pdf
+2026-04-22 01:00:14.176 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:96   - [获取上传链接] 成功，batch_id：51010540-df4d-4e50-86c7-6bd4891dcc2c，上传链接已生成
+2026-04-22 01:00:14.177 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:99   - [文件上传] 开始读取PDF文件：LJ2680DN用户手册.pdf
+2026-04-22 01:00:14.772 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:118  - [文件上传] 成功，文件LJ2680DN用户手册.pdf已存入云存储
+2026-04-22 01:00:14.773 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:130  - [任务轮询] 开始监控任务状态，batch_id：51010540-df4d-4e50-86c7-6bd4891dcc2c，最大超时：600s
+2026-04-22 01:00:18.444 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:171  - [任务轮询] 解析任务完成！总耗时：3s，batch_id：51010540-df4d-4e50-86c7-6bd4891dcc2c
+2026-04-22 01:00:18.444 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:175  - [任务轮询] 结果ZIP包下载链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-03-22/505b1022-c9ef-4378-91f1-d897086987c8.zip...
+2026-04-22 01:00:18.447 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:197  - ===== 开始处理[LJ2680DN用户手册]的MinerU解析结果 =====
+2026-04-22 01:00:18.448 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:200  - [步骤1/4] 开始下载ZIP包，链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-03-22/505b1022-c9ef-4378-91f1-d897086987c8.zip...
+2026-04-22 01:00:19.454 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:209  - [步骤1/4] ZIP包下载成功，保存路径：D:\PycharmProjects\IT_Assistant\output\LJ2680DN用户手册_result.zip
+2026-04-22 01:00:19.454 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:212  - [步骤2/4] 开始解压ZIP包...
+2026-04-22 01:00:19.629 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:230  - [步骤2/4] ZIP包解压完成，解压目录：D:\PycharmProjects\IT_Assistant\output\LJ2680DN用户手册
+2026-04-22 01:00:19.629 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:233  - [步骤3/4] 开始查找解压目录中的MD文件...
+2026-04-22 01:00:19.631 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:237  - [步骤3/4] 共找到1个MD文件，按优先级匹配目标文件
+2026-04-22 01:00:19.631 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:252  - [步骤4/4] 匹配到优先级2目标：MinerU默认文件 full.md
+2026-04-22 01:00:19.632 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:261  - [步骤4/4] 开始重命名MD文件，统一为PDF同名：LJ2680DN用户手册.md
+2026-04-22 01:00:19.633 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:268  - [步骤4/4] MD文件重命名成功：LJ2680DN用户手册.md
+2026-04-22 01:00:19.633 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:274  - ===== [LJ2680DN用户手册]解析结果处理完成，最终MD文件路径：D:\PycharmProjects\IT_Assistant\output\LJ2680DN用户手册\LJ2680DN用户手册.md =====
+2026-04-22 01:00:19.635 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :307  - 【node_pdf_to_md】MD文件生成成功，路径：D:\PycharmProjects\IT_Assistant\output\LJ2680DN用户手册\LJ2680DN用户手册.md
+2026-04-22 01:00:19.636 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :317  - 【node_pdf_to_md】节点执行完成，更新后工作流状态键：['task_id', 'is_pdf_read_enabled', 'is_md_read_enabled', 'is_normal_split_enabled', 'is_silicon_flow_api_enabled', 'is_advanced_split_enabled', 'is_vllm_enabled', 'local_dir', 'local_file_path', 'pdf_path', 'md_path', 'file_title', 'split_path', 'embeddings_path', 'md_content', 'chunks', 'item_name', 'embeddings_content']
+2026-04-22 01:00:19.637 | INFO     | node_pdf_to_md.py   :<module>       :367  - 
+===== 所有 PDF 处理完成，单元测试结束 =====
