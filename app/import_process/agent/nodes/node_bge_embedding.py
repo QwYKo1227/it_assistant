@@ -102,13 +102,13 @@ def step_2_init_model():
         ef = get_bge_m3_ef()
         # 校验模型实例是否有效
         if ef is None:
-            raise ValueError("BGE-M3模型实例为None：pymilvus.model模块未找到或模型加载失败")
+            raise ValueError("Embedding 适配器初始化失败：未能创建 DashScope Embedding 客户端")
 
-        logger.info("BGE-M3模型实例初始化成功（单例模式）")
+        logger.info("Embedding 适配器初始化成功（单例模式）")
         return ef
     except Exception as e:
         # 包装异常信息，明确错误原因和排查方向
-        error_msg = f"BGE-M3模型初始化失败：{e}，请检查模型路径/环境变量配置是否正确"
+        error_msg = f"Embedding 适配器初始化失败：{e}，请检查 DashScope API 配置是否正确"
         logger.error(error_msg)
         raise ValueError(error_msg)
 

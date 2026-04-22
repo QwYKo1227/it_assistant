@@ -1,21 +1,40 @@
-# 导入核心依赖：数据类、环境变量读取、路径处理
 from dataclasses import dataclass
 import os
+
 from dotenv import load_dotenv
 
-# 提前加载.env配置文件（保持和原代码一致，只需执行一次）
 load_dotenv()
+
+
+def _read_float(name: str, default: float) -> float:
+    value = os.getenv(name)
+    return float(value) if value not in (None, "") else default
+
+
+def _read_int(name: str, default: int) -> int:
+    value = os.getenv(name)
+    return int(value) if value not in (None, "") else default
+
 
 @dataclass
 class RerankerConfig:
-    bge_reranker_large: str  # 本地模型路径
-    bge_reranker_device: str       # 模型仓库标识
-    bge_reranker_fp16: bool    # 是否开启半精度（1=True/0=False）
+    base_url: str
+    api_key: str
+    model: str
+    timeout_seconds: float
+    max_retries: int
+    retry_backoff_seconds: float
 
-# 实例化配置对象，和原代码lm_config风格保持一致
+
 reranker_config = RerankerConfig(
-    bge_reranker_large=os.getenv("BGE_RERANKER_LARGE"),
-    bge_reranker_device=os.getenv("BGE_RERANKER_DEVICE"),
-    # 特殊处理：将.env中的1/0转为布尔值，兼容常见的数字/字符串格式
-    bge_reranker_fp16=os.getenv("BGE_RERANKER_FP16") in ("1", "True", "true", 1)
+    base_url=(
+        os.getenv("RERANK_API_BASE_URL")
+        or os.getenv("DASHSCOPE_BASE_URL")
+        or "https://dashscope.aliyuncs.com/api/v1"
+    ),
+    api_key=os.getenv("DASHSCOPE_API_KEY") or os.getenv("OPENAI_API_KEY"),
+    model=os.getenv("RERANK_API_MODEL") or "gte-rerank-v2",
+    timeout_seconds=_read_float("RERANK_API_TIMEOUT_SECONDS", 30.0),
+    max_retries=_read_int("RERANK_API_MAX_RETRIES", 2),
+    retry_backoff_seconds=_read_float("RERANK_API_RETRY_BACKOFF_SECONDS", 1.0),
 )

@@ -198,8 +198,46 @@ def step_2_prepare_collection(vector_dimension: int):
         create_collection(client, CHUNKS_COLLECTION_NAME, vector_dimension)
     else:
         logger.info(f"Milvus集合{CHUNKS_COLLECTION_NAME}已存在，直接复用")
+        _ensure_collection_dimension_compatible(client, CHUNKS_COLLECTION_NAME, vector_dimension)
 
     return client
+
+
+def _extract_dense_vector_dimension(collection_desc: Dict[str, Any]) -> int | None:
+    fields = collection_desc.get("fields") or []
+    for field in fields:
+        field_name = field.get("name") or field.get("field_name")
+        if field_name != "dense_vector":
+            continue
+
+        if field.get("dim") is not None:
+            return int(field["dim"])
+        if field.get("dimension") is not None:
+            return int(field["dimension"])
+
+        params = field.get("params") or {}
+        if isinstance(params, dict):
+            if params.get("dim") is not None:
+                return int(params["dim"])
+            if params.get("dimension") is not None:
+                return int(params["dimension"])
+    return None
+
+
+def _ensure_collection_dimension_compatible(client, collection_name: str, expected_dimension: int):
+    try:
+        collection_desc = client.describe_collection(collection_name=collection_name)
+        actual_dimension = _extract_dense_vector_dimension(collection_desc or {})
+        if actual_dimension and actual_dimension != expected_dimension:
+            raise ValueError(
+                f"Milvus集合[{collection_name}] dense_vector维度为 {actual_dimension}，"
+                f"当前 Embedding 输出维度为 {expected_dimension}。"
+                " 请统一 EMBEDDING_DIM 与现有 collection schema 后再继续。"
+            )
+    except ValueError:
+        raise
+    except Exception as exc:
+        logger.warning(f"无法校验 Milvus 集合维度兼容性，将继续执行: {exc}")
 
 
 def step_3_clean_old_data(client, chunks_json_data: List[Dict[str, Any]]):
