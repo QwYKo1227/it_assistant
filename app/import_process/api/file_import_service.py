@@ -24,6 +24,8 @@ from app.utils.task_utils import (
     add_done_task,
     get_done_task_list,
     get_running_task_list,
+    get_task_result,
+    set_task_result,
     update_task_status,
     get_task_status,
 )
@@ -90,6 +92,7 @@ def run_graph_task(task_id: str, local_dir: str, local_file_path: str):
     try:
         # 1. 更新任务全局状态为：处理中
         update_task_status(task_id, "processing")
+        set_task_result(task_id, "error", "")
         logger.info(f"[{task_id}] 开始执行LangGraph全流程，本地文件路径：{local_file_path}")
 
         # 2. 初始化LangGraph状态：加载默认状态 + 注入当前任务的核心参数
@@ -113,7 +116,9 @@ def run_graph_task(task_id: str, local_dir: str, local_file_path: str):
     except Exception as e:
         # 5. 捕获全流程异常，更新任务全局状态为：失败，并记录错误日志（含堆栈）
         update_task_status(task_id, "failed")
-        logger.error(f"[{task_id}] LangGraph全流程执行失败，异常信息：{str(e)}", exc_info=True)
+        error_message = f"{type(e).__name__}: {str(e)}"
+        set_task_result(task_id, "error", error_message)
+        logger.exception(f"[{task_id}] LangGraph全流程执行失败，异常信息：{error_message}")
 
 
 # --------------------------
@@ -150,50 +155,57 @@ async def upload_files(background_tasks: BackgroundTasks, files: List[UploadFile
         # 3. 标记「文件上传」阶段为「运行中」，前端轮询可查
         add_running_task(task_id, "upload_file")
 
-        # 4. 构建该任务的本地独立目录：output/YYYYMMDD/TaskID，避免多文件重名冲突
-        task_local_dir = os.path.join(date_based_root_dir, task_id)
-        os.makedirs(task_local_dir, exist_ok=True)  # 目录不存在则创建，存在则不做处理
-        # 构建上传文件的本地保存绝对路径
-        local_file_abs_path = os.path.join(task_local_dir, file.filename)
-
-        # 5. 将上传的文件保存到本地临时目录（后续MinIO上传/文件解析均基于此文件）
-        with open(local_file_abs_path, "wb") as file_buffer:
-            shutil.copyfileobj(file.file, file_buffer)
-        logger.info(f"[{task_id}] 文件已保存至本地，路径：{local_file_abs_path}")
-
-        # 6. 将本地文件上传至MinIO对象存储，做持久化保存
-        # 从环境变量获取MinIO的PDF存储目录配置
-        minio_pdf_base_dir = os.getenv("MINIO_PDF_DIR", "pdf_files")  # 缺省值：pdf_files
-        # 构建MinIO中的文件对象名：配置目录/YYYYMMDD/文件名（按日期分层，和本地一致）
-        minio_object_name = f"{minio_pdf_base_dir}/{datetime.now().strftime('%Y%m%d')}/{file.filename}"
         try:
-            # 获取MinIO客户端实例
-            minio_client = get_minio_client()
-            if minio_client is None:
-                # MinIO客户端获取失败，抛出500服务异常
-                raise HTTPException(status_code=500,
-                                    detail="MinIO service connection failed, please check MinIO config")
-            # 从环境变量获取MinIO的桶名配置
-            minio_bucket_name = os.getenv("MINIO_BUCKET_NAME", "kb-import-bucket")  # 缺省值：kb-import-bucket
+            # 4. 构建该任务的本地独立目录：output/YYYYMMDD/TaskID，避免多文件重名冲突
+            task_local_dir = os.path.join(date_based_root_dir, task_id)
+            os.makedirs(task_local_dir, exist_ok=True)  # 目录不存在则创建，存在则不做处理
+            # 构建上传文件的本地保存绝对路径
+            local_file_abs_path = os.path.join(task_local_dir, file.filename)
 
-            # 本地文件上传至MinIO（同名文件会自动覆盖，保证文件最新）
-            minio_client.fput_object(
-                bucket_name=minio_bucket_name,
-                object_name=minio_object_name,
-                file_path=local_file_abs_path,
-                content_type=file.content_type  # 传递文件原始MIME类型
-            )
-            logger.info(f"[{task_id}] 文件已成功上传至MinIO，桶名：{minio_bucket_name}，对象名：{minio_object_name}")
+            # 5. 将上传的文件保存到本地临时目录（后续MinIO上传/文件解析均基于此文件）
+            with open(local_file_abs_path, "wb") as file_buffer:
+                shutil.copyfileobj(file.file, file_buffer)
+            logger.info(f"[{task_id}] 文件已保存至本地，路径：{local_file_abs_path}")
+
+            # 6. 将本地文件上传至MinIO对象存储，做持久化保存
+            # 从环境变量获取MinIO的PDF存储目录配置
+            minio_pdf_base_dir = os.getenv("MINIO_PDF_DIR", "pdf_files")  # 缺省值：pdf_files
+            # 构建MinIO中的文件对象名：配置目录/YYYYMMDD/文件名（按日期分层，和本地一致）
+            minio_object_name = f"{minio_pdf_base_dir}/{datetime.now().strftime('%Y%m%d')}/{file.filename}"
+            try:
+                # 获取MinIO客户端实例
+                minio_client = get_minio_client()
+                if minio_client is None:
+                    # MinIO客户端获取失败，抛出500服务异常
+                    raise HTTPException(status_code=500,
+                                        detail="MinIO service connection failed, please check MinIO config")
+                # 从环境变量获取MinIO的桶名配置
+                minio_bucket_name = os.getenv("MINIO_BUCKET_NAME", "kb-import-bucket")  # 缺省值：kb-import-bucket
+
+                # 本地文件上传至MinIO（同名文件会自动覆盖，保证文件最新）
+                minio_client.fput_object(
+                    bucket_name=minio_bucket_name,
+                    object_name=minio_object_name,
+                    file_path=local_file_abs_path,
+                    content_type=file.content_type  # 传递文件原始MIME类型
+                )
+                logger.info(f"[{task_id}] 文件已成功上传至MinIO，桶名：{minio_bucket_name}，对象名：{minio_object_name}")
+            except Exception as e:
+                # MinIO上传失败，记录警告日志（不中断后续流程，本地文件仍可继续处理）
+                logger.exception(f"[{task_id}] 文件上传MinIO失败，将继续执行本地处理流程，异常信息：{type(e).__name__}: {str(e)}")
+
+            # 7. 标记「文件上传」阶段为「已完成」，前端轮询可查
+            add_done_task(task_id, "upload_file")
+
+            # 8. 将LangGraph全流程处理加入FastAPI后台任务（异步执行，不阻塞当前接口响应）
+            background_tasks.add_task(run_graph_task, task_id, task_local_dir, local_file_abs_path)
+            logger.info(f"[{task_id}] 已将LangGraph全流程加入后台任务，任务已启动")
         except Exception as e:
-            # MinIO上传失败，记录警告日志（不中断后续流程，本地文件仍可继续处理）
-            logger.warning(f"[{task_id}] 文件上传MinIO失败，将继续执行本地处理流程，异常信息：{str(e)}", exc_info=True)
-
-        # 7. 标记「文件上传」阶段为「已完成」，前端轮询可查
-        add_done_task(task_id, "upload_file")
-
-        # 8. 将LangGraph全流程处理加入FastAPI后台任务（异步执行，不阻塞当前接口响应）
-        background_tasks.add_task(run_graph_task, task_id, task_local_dir, local_file_abs_path)
-        logger.info(f"[{task_id}] 已将LangGraph全流程加入后台任务，任务已启动")
+            error_message = f"{type(e).__name__}: {str(e)}"
+            update_task_status(task_id, "failed")
+            set_task_result(task_id, "error", error_message)
+            logger.exception(f"[{task_id}] 上传阶段执行失败，异常信息：{error_message}")
+            raise HTTPException(status_code=500, detail=f"文件上传失败，task_id={task_id}，错误：{error_message}") from e
 
     # 9. 所有文件处理完毕，返回上传成功信息和所有TaskID（前端基于TaskID轮询进度）
     logger.info(f"多文件上传处理完毕，共处理{len(files)}个文件，生成TaskID列表：{task_ids}")
@@ -225,7 +237,8 @@ async def get_task_progress(task_id: str):
         "task_id": task_id,
         "status": get_task_status(task_id),  # 任务全局状态：pending/processing/completed/failed
         "done_list": get_done_task_list(task_id),  # 已完成的节点/阶段列表
-        "running_list": get_running_task_list(task_id)  # 正在运行的节点/阶段列表
+        "running_list": get_running_task_list(task_id),  # 正在运行的节点/阶段列表
+        "error": get_task_result(task_id, "error"),  # 失败原因，便于前端和容器外定位问题
     }
     # 记录状态查询日志，方便追踪前端轮询情况
     logger.info(
