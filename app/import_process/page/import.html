@@ -164,8 +164,10 @@
     const fileInput = document.getElementById('fileInput');
     const fileList = document.getElementById('fileList');
     
-    // 模拟后端API地址
-    const API_BASE = 'http://127.0.0.1:8000';
+    // 默认同源；如页面被单独打开（file://），再退回本地开发地址
+    const API_BASE = `${location.protocol}//${location.host}`.includes('http')
+        ? `${location.protocol}//${location.host}`
+        : 'http://127.0.0.1:8000';
 
     dropZone.addEventListener('dragover', (e) => {
         e.preventDefault();
@@ -243,7 +245,10 @@
                 body: formData
             });
 
-            if (!response.ok) throw new Error('Upload failed');
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || 'Upload failed');
+            }
             
             const result = await response.json();
             const taskId = result.task_ids[0]; // 假设一次传一个或取第一个
@@ -260,6 +265,7 @@
             console.error(error);
             statusBadge.textContent = '失败';
             statusBadge.className = 'status-badge status-error';
+            renderLogs(itemEl, [], [`上传失败：${error.message || error}`]);
         }
     }
 
@@ -337,6 +343,9 @@
                 } else if (data.status === 'failed') {
                     statusBadge.textContent = '失败';
                     statusBadge.className = 'status-badge status-error';
+                    if (data.error) {
+                        renderLogs(itemEl, data.done_list, [...(data.running_list || []), `失败原因：${data.error}`]);
+                    }
                     clearInterval(interval);
                 }
             } catch (e) {
