@@ -1,0 +1,74 @@
+services:
+  import-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: it-assistant-import
+    restart: unless-stopped
+    working_dir: /app
+    command: uvicorn app.import_process.api.file_import_service:app --host 0.0.0.0 --port 8000
+    env_file:
+      - .env
+    environment:
+      PROJECT_ROOT: /app
+      PYTHONUNBUFFERED: "1"
+      TF_CPP_MIN_LOG_LEVEL: "3"
+      TF_ENABLE_ONEDNN_OPTS: "0"
+      ABSL_MIN_LOG_LEVEL: "3"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./.env:/app/.env:ro
+      - ./output:/app/output
+      - ./logs:/app/logs
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import sys, urllib.request; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/import.html').status == 200 else 1)",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  query-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: it-assistant-query
+    restart: unless-stopped
+    working_dir: /app
+    command: uvicorn app.query_process.api.query_service:app --host 0.0.0.0 --port 8001
+    env_file:
+      - .env
+    environment:
+      PROJECT_ROOT: /app
+      PYTHONUNBUFFERED: "1"
+      TF_CPP_MIN_LOG_LEVEL: "3"
+      TF_ENABLE_ONEDNN_OPTS: "0"
+      ABSL_MIN_LOG_LEVEL: "3"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./.env:/app/.env:ro
+      - ./output:/app/output
+      - ./logs:/app/logs
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import sys, urllib.request; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8001/chat.html').status == 200 else 1)",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
