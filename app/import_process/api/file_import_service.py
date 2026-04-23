@@ -1,9 +1,17 @@
 import os
 import shutil
+import sys
 import uuid
 from typing import List, Dict, Any
 from datetime import datetime
 import uvicorn
+from pathlib import Path
+
+if __package__ in (None, ""):
+    PROJECT_ROOT_FOR_IMPORT = Path(__file__).resolve().parents[3]
+    if str(PROJECT_ROOT_FOR_IMPORT) not in sys.path:
+        sys.path.insert(0, str(PROJECT_ROOT_FOR_IMPORT))
+
 # 第三方库
 from fastapi import FastAPI, UploadFile, File, BackgroundTasks, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -231,6 +239,9 @@ async def get_task_progress(task_id: str):
 # --------------------------
 if __name__ == "__main__":
     """服务启动入口：本地开发环境直接运行"""
+    if os.getenv("IT_ASSISTANT_IMPORT_ONLY") == "1":
+        logger.info("File Import Service 导入检查完成，跳过 uvicorn 启动")
+        raise SystemExit(0)
     logger.info("File Import Service 服务启动中...")
     # 启动uvicorn服务，绑定本地IP和8000端口，关闭自动重载（生产环境建议用workers多进程）
     uvicorn.run(

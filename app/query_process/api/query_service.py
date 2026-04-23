@@ -1,13 +1,22 @@
 from pathlib import Path
+import os
+import sys
 import uuid
 import uvicorn
+from typing import Optional
+
+if __package__ in (None, ""):
+    PROJECT_ROOT_FOR_IMPORT = Path(__file__).resolve().parents[3]
+    if str(PROJECT_ROOT_FOR_IMPORT) not in sys.path:
+        sys.path.insert(0, str(PROJECT_ROOT_FOR_IMPORT))
+
 from fastapi import FastAPI, BackgroundTasks, HTTPException, Request
 from fastapi.responses import FileResponse, StreamingResponse
 from pydantic import BaseModel, Field
 from starlette.middleware.cors import CORSMiddleware
 
 from app.utils.task_utils import *
-from app.utils.sse_utils import create_sse_queue, SSEEvent, sse_generator
+from app.utils.sse_utils import create_sse_queue, push_to_session, SSEEvent, sse_generator
 from app.clients.mongo_history_utils import *
 from app.query_process.agent.main_graph import query_app
 
@@ -41,7 +50,7 @@ async def chat():
 class QueryRequest(BaseModel):
     """查询请求数据结构"""
     query: str = Field(..., description="查询内容")  # ...必须填写
-    session_id: str = Field(None, description="会话ID")
+    session_id: Optional[str] = Field(default=None, description="会话ID")
     is_stream: bool = Field(False, description="是否流式返回")
 
 
@@ -168,4 +177,6 @@ async def clear_chat_history(session_id: str):
 
 
 if __name__ == "__main__":
+    if os.getenv("IT_ASSISTANT_IMPORT_ONLY") == "1":
+        raise SystemExit(0)
     uvicorn.run(app, host="127.0.0.1", port=8001)

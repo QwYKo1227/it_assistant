@@ -1,0 +1,421 @@
+2026-04-23 11:14:14.200 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:14:14.353 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:14:24.112 | INFO     | file_import_service.py:<module>       :245  - File Import Service 服务启动中...
+2026-04-23 11:17:58.830 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:17:58.988 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:18:07.575 | INFO     | file_import_service.py:<module>       :245  - File Import Service 服务启动中...
+2026-04-23 11:19:47.812 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:19:47.923 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:20:12.227 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:20:12.347 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:20:12.632 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:20:12.831 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:20:44.241 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:20:44.558 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:20:56.221 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:20:56.311 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:21:14.619 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:21:14.721 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:21:39.828 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:21:39.924 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:21:40.518 | INFO     | minio_utils.py      :<module>       :29   - MinIO存储桶[knowledge-base-files]已存在，无需重复创建
+2026-04-23 11:21:40.706 | INFO     | minio_utils.py      :<module>       :42   - MinIO存储桶[knowledge-base-files]已配置公网只读策略，支持匿名URL访问
+2026-04-23 11:26:10.589 | INFO     | file_import_service.py:get_import_page:61   - 前端页面访问，文件绝对路径：D:\PycharmProjects\IT_Assistant\app\import_process\page\import.html
+2026-04-23 11:26:29.611 | INFO     | file_import_service.py:get_import_page:61   - 前端页面访问，文件绝对路径：D:\PycharmProjects\IT_Assistant\app\import_process\page\import.html
+2026-04-23 11:29:41.289 | INFO     | file_import_service.py:get_import_page:61   - 前端页面访问，文件绝对路径：D:\PycharmProjects\IT_Assistant\app\import_process\page\import.html
+2026-04-23 11:30:06.478 | INFO     | file_import_service.py:upload_files   :148  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 开始处理上传文件，文件名：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf，文件类型：application/pdf
+2026-04-23 11:30:06.482 | INFO     | file_import_service.py:upload_files   :162  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 文件已保存至本地，路径：D:\PycharmProjects\IT_Assistant\output\20260423\5e20c48b-30ea-41d6-acb9-3fac6c4678be\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:06.798 | INFO     | file_import_service.py:upload_files   :186  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 文件已成功上传至MinIO，桶名：knowledge-base-files，对象名：pdf_files/20260423/HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:06.799 | INFO     | file_import_service.py:upload_files   :196  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 已将LangGraph全流程加入后台任务，任务已启动
+2026-04-23 11:30:06.801 | INFO     | file_import_service.py:upload_files   :199  - 多文件上传处理完毕，共处理1个文件，生成TaskID列表：['5e20c48b-30ea-41d6-acb9-3fac6c4678be']
+2026-04-23 11:30:06.803 | INFO     | file_import_service.py:run_graph_task :93   - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 开始执行LangGraph全流程，本地文件路径：D:\PycharmProjects\IT_Assistant\output\20260423\5e20c48b-30ea-41d6-acb9-3fac6c4678be\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:06.822 | INFO     | node_entry.py       :node_entry     :37   - 【node_entry】文件类型校验通过：D:\PycharmProjects\IT_Assistant\output\20260423\5e20c48b-30ea-41d6-acb9-3fac6c4678be\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf → PDF格式，开启PDF解析流程
+2026-04-23 11:30:06.825 | INFO     | node_entry.py       :node_entry     :50   - 【node_entry】文件业务标识提取完成：file_title = HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)
+2026-04-23 11:30:06.826 | INFO     | file_import_service.py:run_graph_task :105  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] LangGraph节点执行完成：node_entry
+2026-04-23 11:30:06.827 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:68   - [配置校验] MinerU基础配置加载成功，开始处理文件：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:07.198 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:96   - [获取上传链接] 成功，batch_id：ed183e72-8cc5-4339-90d3-e9cc6d099a44，上传链接已生成
+2026-04-23 11:30:07.199 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:99   - [文件上传] 开始读取PDF文件：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:07.703 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:118  - [文件上传] 成功，文件HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf已存入云存储
+2026-04-23 11:30:07.704 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:130  - [任务轮询] 开始监控任务状态，batch_id：ed183e72-8cc5-4339-90d3-e9cc6d099a44，最大超时：600s
+2026-04-23 11:30:08.809 | INFO     | file_import_service.py:get_task_progress:231  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件']
+2026-04-23 11:30:10.809 | INFO     | file_import_service.py:get_task_progress:231  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件']
+2026-04-23 11:30:11.365 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:171  - [任务轮询] 解析任务完成！总耗时：3s，batch_id：ed183e72-8cc5-4339-90d3-e9cc6d099a44
+2026-04-23 11:30:11.366 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:175  - [任务轮询] 结果ZIP包下载链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-04-09/47683bc1-c8b8-4092-a949-3890e6c8bb86.zip...
+2026-04-23 11:30:11.369 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:197  - ===== 开始处理[HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)]的MinerU解析结果 =====
+2026-04-23 11:30:11.370 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:200  - [步骤1/4] 开始下载ZIP包，链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-04-09/47683bc1-c8b8-4092-a949-3890e6c8bb86.zip...
+2026-04-23 11:30:11.638 | ERROR    | node_pdf_to_md.py   :node_pdf_to_md :321  - 【node_pdf_to_md】PDF转MD流程执行失败：HTTPSConnectionPool(host='cdn-mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /pdf/2026-04-09/47683bc1-c8b8-4092-a949-3890e6c8bb86.zip (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-04-23 11:30:11.638 | ERROR    | file_import_service.py:run_graph_task :116  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] LangGraph全流程执行失败，异常信息：HTTPSConnectionPool(host='cdn-mineru.openxlab.org.cn', port=443): Max retries exceeded with url: /pdf/2026-04-09/47683bc1-c8b8-4092-a949-3890e6c8bb86.zip (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-04-23 11:30:12.811 | INFO     | file_import_service.py:get_task_progress:231  - [5e20c48b-30ea-41d6-acb9-3fac6c4678be] 任务状态查询，当前状态：failed，已完成节点：['开始上传文件', '检查文件', 'PDF转Markdown']
+2026-04-23 11:30:37.212 | INFO     | file_import_service.py:get_import_page:61   - 前端页面访问，文件绝对路径：D:\PycharmProjects\IT_Assistant\app\import_process\page\import.html
+2026-04-23 11:30:44.504 | INFO     | file_import_service.py:upload_files   :148  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 开始处理上传文件，文件名：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf，文件类型：application/pdf
+2026-04-23 11:30:44.507 | INFO     | file_import_service.py:upload_files   :162  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 文件已保存至本地，路径：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:44.838 | INFO     | file_import_service.py:upload_files   :186  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 文件已成功上传至MinIO，桶名：knowledge-base-files，对象名：pdf_files/20260423/HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:44.839 | INFO     | file_import_service.py:upload_files   :196  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 已将LangGraph全流程加入后台任务，任务已启动
+2026-04-23 11:30:44.841 | INFO     | file_import_service.py:upload_files   :199  - 多文件上传处理完毕，共处理1个文件，生成TaskID列表：['876f15d6-85cd-4035-8533-579b59ad7ab8']
+2026-04-23 11:30:44.843 | INFO     | file_import_service.py:run_graph_task :93   - [876f15d6-85cd-4035-8533-579b59ad7ab8] 开始执行LangGraph全流程，本地文件路径：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:44.844 | INFO     | node_entry.py       :node_entry     :37   - 【node_entry】文件类型校验通过：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf → PDF格式，开启PDF解析流程
+2026-04-23 11:30:44.845 | INFO     | node_entry.py       :node_entry     :50   - 【node_entry】文件业务标识提取完成：file_title = HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)
+2026-04-23 11:30:44.846 | INFO     | file_import_service.py:run_graph_task :105  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph节点执行完成：node_entry
+2026-04-23 11:30:44.847 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:68   - [配置校验] MinerU基础配置加载成功，开始处理文件：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:45.228 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:96   - [获取上传链接] 成功，batch_id：b226c71c-4e46-488c-8c5d-c2b749464d8b，上传链接已生成
+2026-04-23 11:30:45.229 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:99   - [文件上传] 开始读取PDF文件：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf
+2026-04-23 11:30:45.713 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:118  - [文件上传] 成功，文件HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).pdf已存入云存储
+2026-04-23 11:30:45.714 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:130  - [任务轮询] 开始监控任务状态，batch_id：b226c71c-4e46-488c-8c5d-c2b749464d8b，最大超时：600s
+2026-04-23 11:30:46.844 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件']
+2026-04-23 11:30:48.844 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件']
+2026-04-23 11:30:49.435 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:171  - [任务轮询] 解析任务完成！总耗时：3s，batch_id：b226c71c-4e46-488c-8c5d-c2b749464d8b
+2026-04-23 11:30:49.436 | INFO     | node_pdf_to_md.py   :step_2_upload_and_poll:175  - [任务轮询] 结果ZIP包下载链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-04-09/47683bc1-c8b8-4092-a949-3890e6c8bb86.zip...
+2026-04-23 11:30:49.439 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:197  - ===== 开始处理[HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)]的MinerU解析结果 =====
+2026-04-23 11:30:49.440 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:200  - [步骤1/4] 开始下载ZIP包，链接：https://cdn-mineru.openxlab.org.cn/pdf/2026-04-09/47683bc1-c8b8-4092-a949-3890e6c8bb86.zip...
+2026-04-23 11:30:49.960 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:209  - [步骤1/4] ZIP包下载成功，保存路径：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)_result.zip
+2026-04-23 11:30:49.962 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:212  - [步骤2/4] 开始解压ZIP包...
+2026-04-23 11:30:49.973 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:230  - [步骤2/4] ZIP包解压完成，解压目录：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)
+2026-04-23 11:30:49.975 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:233  - [步骤3/4] 开始查找解压目录中的MD文件...
+2026-04-23 11:30:49.976 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:237  - [步骤3/4] 共找到1个MD文件，按优先级匹配目标文件
+2026-04-23 11:30:49.977 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:252  - [步骤4/4] 匹配到优先级2目标：MinerU默认文件 full.md
+2026-04-23 11:30:49.978 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:261  - [步骤4/4] 开始重命名MD文件，统一为PDF同名：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).md
+2026-04-23 11:30:49.979 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:268  - [步骤4/4] MD文件重命名成功：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).md
+2026-04-23 11:30:49.980 | INFO     | node_pdf_to_md.py   :step_3_download_and_extract:274  - ===== [HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)]解析结果处理完成，最终MD文件路径：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).md =====
+2026-04-23 11:30:49.982 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :307  - 【node_pdf_to_md】MD文件生成成功，路径：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn).md
+2026-04-23 11:30:49.983 | INFO     | node_pdf_to_md.py   :node_pdf_to_md :317  - 【node_pdf_to_md】节点执行完成，更新后工作流状态键：['task_id', 'is_md_read_enabled', 'is_pdf_read_enabled', 'is_normal_split_enabled', 'is_silicon_flow_api_enabled', 'is_advanced_split_enabled', 'is_vllm_enabled', 'local_dir', 'local_file_path', 'file_title', 'pdf_path', 'md_path', 'split_path', 'embeddings_path', 'md_content', 'chunks', 'item_name', 'embeddings_content']
+2026-04-23 11:30:49.984 | INFO     | file_import_service.py:run_graph_task :105  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph节点执行完成：node_pdf_to_md
+2026-04-23 11:30:49.985 | INFO     | node_md_img.py      :step_2_scan_images:121  - 图片加入待处理列表：0f279e4faa1d6d6b55e508050451d248c6be03a60ad2b24e39022a7f59d593cc.jpg
+2026-04-23 11:30:49.986 | INFO     | node_md_img.py      :step_2_scan_images:121  - 图片加入待处理列表：6df4966656e291556d34aa4ff687334486249ac9a1b7050612c3df5e83d7390b.jpg
+2026-04-23 11:30:49.987 | WARNING  | node_md_img.py      :step_2_scan_images:117  - 图片未在MD中引用，跳过处理：852d6db3cdd3d98ba962aa9c150e6ccf5bac0274d8140ce27ae70405aeb73a4e.jpg
+2026-04-23 11:30:49.988 | WARNING  | node_md_img.py      :step_2_scan_images:117  - 图片未在MD中引用，跳过处理：c9d314bb34ef9dda685da892bade8627d5d9e5ab1cd401402c4f503d64e77e06.jpg
+2026-04-23 11:30:49.989 | WARNING  | node_md_img.py      :step_2_scan_images:117  - 图片未在MD中引用，跳过处理：d9357e45e8286fb0bf6b30f3438bf653715eb4015f00947813586b0a54b8aaba.jpg
+2026-04-23 11:30:49.990 | INFO     | node_md_img.py      :step_2_scan_images:122  - 图片扫描完成，共筛选出待处理图片：2 张
+2026-04-23 11:30:49.991 | INFO     | lm_utils.py         :get_llm_client :44   - [LLM客户端] 开始初始化新实例：模型=qwen3-vl-flash，JSON模式=False
+2026-04-23 11:30:50.732 | INFO     | lm_utils.py         :get_llm_client :71   - [LLM客户端] 实例初始化成功并缓存：模型=qwen3-vl-flash，JSON模式=False
+2026-04-23 11:30:50.859 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件', 'PDF转Markdown']
+2026-04-23 11:30:52.011 | INFO     | node_md_img.py      :summarize_image:184  - 图片摘要生成成功：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\images\0f279e4faa1d6d6b55e508050451d248c6be03a60ad2b24e39022a7f59d593cc.jpg，摘要：华为MateStation S 12代酷睿版主机背面接口与按键布局示意图
+2026-04-23 11:30:52.828 | INFO     | node_md_img.py      :summarize_image:184  - 图片摘要生成成功：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\images\6df4966656e291556d34aa4ff687334486249ac9a1b7050612c3df5e83d7390b.jpg，摘要：华为MateStation S 12代酷睿版主机背面接口示意图：1电源指示灯，2电源接口，3USB接口。
+2026-04-23 11:30:52.829 | INFO     | node_md_img.py      :step_3_generate_summaries:212  - 图片摘要批量生成完成，共处理2张图片
+2026-04-23 11:30:52.846 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件', 'PDF转Markdown']
+2026-04-23 11:30:52.867 | INFO     | node_md_img.py      :upload_to_minio:279  - 开始上传图片至MinIO：本地路径=D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\images\0f279e4faa1d6d6b55e508050451d248c6be03a60ad2b24e39022a7f59d593cc.jpg，MinIO对象名=/upload-images/HUAWEIMateStationS12代酷睿版用户指南-(PUC,Windows11_02,zh-cn)/0f279e4faa1d6d6b55e508050451d248c6be03a60ad2b24e39022a7f59d593cc.jpg
+2026-04-23 11:30:52.907 | INFO     | node_md_img.py      :upload_to_minio:307  - 图片上传成功，访问URL：http://43.136.15.96:9000/knowledge-base-files/upload-images/HUAWEIMateStationS12代酷睿版用户指南-(PUC,Windows11_02,zh-cn)/0f279e4faa1d6d6b55e508050451d248c6be03a60ad2b24e39022a7f59d593cc.jpg
+2026-04-23 11:30:52.908 | INFO     | node_md_img.py      :upload_to_minio:279  - 开始上传图片至MinIO：本地路径=D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\images\6df4966656e291556d34aa4ff687334486249ac9a1b7050612c3df5e83d7390b.jpg，MinIO对象名=/upload-images/HUAWEIMateStationS12代酷睿版用户指南-(PUC,Windows11_02,zh-cn)/6df4966656e291556d34aa4ff687334486249ac9a1b7050612c3df5e83d7390b.jpg
+2026-04-23 11:30:52.948 | INFO     | node_md_img.py      :upload_to_minio:307  - 图片上传成功，访问URL：http://43.136.15.96:9000/knowledge-base-files/upload-images/HUAWEIMateStationS12代酷睿版用户指南-(PUC,Windows11_02,zh-cn)/6df4966656e291556d34aa4ff687334486249ac9a1b7050612c3df5e83d7390b.jpg
+2026-04-23 11:30:52.949 | INFO     | node_md_img.py      :upload_images_batch:267  - 图片批量上传完成，成功上传2/2张图片
+2026-04-23 11:30:52.950 | INFO     | node_md_img.py      :merge_summary_and_url:325  - 图片摘要与URL合并完成，有效图片信息2条
+2026-04-23 11:30:52.951 | INFO     | node_md_img.py      :process_md_file:351  - MD文件图片引用替换完成，共替换2处图片引用
+2026-04-23 11:30:52.952 | INFO     | node_md_img.py      :step_5_backup_new_md_file:400  - 处理后MD文件已保存，新文件路径：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)_new.md
+2026-04-23 11:30:52.953 | INFO     | node_md_img.py      :node_md_img    :451  - MD图片处理完成，新文件已保存：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)\HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)_new.md
+2026-04-23 11:30:52.954 | INFO     | file_import_service.py:run_graph_task :105  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph节点执行完成：node_md_img
+2026-04-23 11:30:52.955 | INFO     | node_document_split.py:node_document_split:348  - >>> 开始执行核心节点：【文档切分】node_document_split
+2026-04-23 11:30:52.956 | INFO     | node_document_split.py:step_1_get_inputs:45   - 步骤1：输入数据加载完成，文件标题：HUAWEI MateStation S 12代酷睿版 用户指南-(PUC,Windows11_02,zh-cn)，最大Chunk长度：2000
+2026-04-23 11:30:52.957 | INFO     | node_document_split.py:step_2_split_by_titles:107  - 步骤2：MD标题切分完成，识别到38个有效标题，原始文本共292行
+2026-04-23 11:30:52.958 | INFO     | node_document_split.py:step_4_refine_chunks:261  - 步骤4-1：超长章节切分完成，共生成38个初始子Chunk
+2026-04-23 11:30:52.959 | INFO     | node_document_split.py:step_4_refine_chunks:265  - 步骤4-2：过短章节合并完成，最终得到12个Chunk
+2026-04-23 11:30:52.960 | INFO     | node_document_split.py:step_5_print_stats:291  - -------------------------------------------------- 文档切分统计信息 --------------------------------------------------
+2026-04-23 11:30:52.961 | INFO     | node_document_split.py:step_5_print_stats:292  - MD原始文本总行数：292
+2026-04-23 11:30:52.961 | INFO     | node_document_split.py:step_5_print_stats:293  - 最终生成Chunk数量：12
+2026-04-23 11:30:52.962 | INFO     | node_document_split.py:step_5_print_stats:296  - 首个Chunk标题预览：# 用户指南
+2026-04-23 11:30:52.963 | INFO     | node_document_split.py:step_5_print_stats:297  - --------------------------------------------------------------------------------------------------------------
+2026-04-23 11:30:52.965 | INFO     | node_document_split.py:step_6_backup  :332  - 步骤6：Chunk结果备份成功，备份文件路径：D:\PycharmProjects\IT_Assistant\output\20260423\876f15d6-85cd-4035-8533-579b59ad7ab8\chunks.json
+2026-04-23 11:30:52.965 | INFO     | node_document_split.py:node_document_split:390  - >>> 核心节点执行完成：【文档切分】node_document_split，已生成12个有效Chunk，结果已写入状态字典
+2026-04-23 11:30:52.966 | INFO     | file_import_service.py:run_graph_task :105  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph节点执行完成：node_document_split
+2026-04-23 11:30:52.967 | INFO     | node_item_name_recognition.py:node_item_name_recognition:422  - >>> 开始执行核心节点：【商品名称识别】node_item_name_recognition
+2026-04-23 11:30:52.968 | INFO     | node_item_name_recognition.py:step_1_get_inputs:74   - 步骤1：输入校验完成，获取到12个有效文本切片
+2026-04-23 11:30:52.969 | INFO     | node_item_name_recognition.py:step_2_build_context:131  - 上下文总字符数即将超限（2500），已停止拼接后续切片
+2026-04-23 11:30:52.970 | INFO     | node_item_name_recognition.py:step_2_build_context:138  - 步骤2：上下文构建完成，最终长度2500字符
+2026-04-23 11:30:52.971 | INFO     | node_item_name_recognition.py:step_3_call_llm:160  - 开始执行步骤3：调用大模型识别商品名称
+2026-04-23 11:30:52.972 | INFO     | lm_utils.py         :get_llm_client :44   - [LLM客户端] 开始初始化新实例：模型=qwen-flash，JSON模式=False
+2026-04-23 11:30:52.973 | INFO     | lm_utils.py         :get_llm_client :71   - [LLM客户端] 实例初始化成功并缓存：模型=qwen-flash，JSON模式=False
+2026-04-23 11:30:53.569 | INFO     | node_item_name_recognition.py:step_3_call_llm:198  - 步骤3：大模型识别商品名称成功，结果为：HUAWEIMateStationS12代酷睿版
+2026-04-23 11:30:53.570 | INFO     | node_item_name_recognition.py:step_4_update_chunks:228  - 步骤4：商品名称回填完成，共为12个切片添加item_name字段，值为：HUAWEIMateStationS12代酷睿版
+2026-04-23 11:30:53.571 | INFO     | node_item_name_recognition.py:step_5_generate_vectors:243  - 开始执行步骤5：为商品名称[HUAWEIMateStationS12代酷睿版]生成BGE-M3双向量
+2026-04-23 11:30:53.572 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 1 条文本生成混合向量
+2026-04-23 11:30:53.573 | INFO     | embedding_utils.py  :get_bge_m3_ef  :129  - 初始化 DashScope Embedding 适配器: model=text-embedding-v4, dim=1024
+2026-04-23 11:30:53.574 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=1
+2026-04-23 11:30:54.633 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 1 条文本向量生成完成
+2026-04-23 11:30:54.634 | INFO     | node_item_name_recognition.py:step_5_generate_vectors:260  - 步骤5：BGE-M3稠密+稀疏向量生成成功
+2026-04-23 11:30:54.635 | INFO     | node_item_name_recognition.py:step_6_save_to_milvus:299  - 开始执行步骤6：将商品名称[HUAWEIMateStationS12代酷睿版]保存到Milvus集合[kb_item_names]
+2026-04-23 11:30:54.750 | INFO     | milvus_utils.py     :get_milvus_client:27   - Milvus客户端连接成功
+2026-04-23 11:30:54.847 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件', 'PDF转Markdown', 'Markdown图片处理', '文档切分']
+2026-04-23 11:30:55.098 | INFO     | node_item_name_recognition.py:step_6_save_to_milvus:384  - Milvus幂等性处理完成，已删除集合中[HUAWEIMateStationS12代酷睿版]的历史数据
+2026-04-23 11:30:55.489 | INFO     | node_item_name_recognition.py:step_6_save_to_milvus:405  - 步骤6：商品名称[HUAWEIMateStationS12代酷睿版]成功存入Milvus集合[kb_item_names]，数据：['file_title', 'item_name', 'dense_vector', 'sparse_vector']
+2026-04-23 11:30:55.490 | INFO     | node_item_name_recognition.py:node_item_name_recognition:461  - >>> 核心节点执行完成：【商品名称识别】node_item_name_recognition，识别结果：HUAWEIMateStationS12代酷睿版，已存入Milvus
+2026-04-23 11:30:55.491 | INFO     | file_import_service.py:run_graph_task :105  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph节点执行完成：node_item_name_recognition
+2026-04-23 11:30:55.492 | INFO     | node_bge_embedding.py:node_bge_embedding:39   - >>> 开始执行LangGraph节点：node_bge_embedding
+2026-04-23 11:30:55.492 | INFO     | node_bge_embedding.py:node_bge_embedding:43   - --- BGE-M3 文本向量化处理启动 ---
+2026-04-23 11:30:55.493 | INFO     | node_bge_embedding.py:step_1_validate_input:86   - 向量化输入校验通过，待处理文本切片数量：12
+2026-04-23 11:30:55.494 | INFO     | node_bge_embedding.py:step_2_init_model:107  - Embedding 适配器初始化成功（单例模式）
+2026-04-23 11:30:55.495 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 5 条文本生成混合向量
+2026-04-23 11:30:55.496 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=5
+2026-04-23 11:30:56.541 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 5 条文本向量生成完成
+2026-04-23 11:30:56.541 | INFO     | node_bge_embedding.py:step_3_generate_embeddings:176  - 第1-5条切片：双向量生成成功
+2026-04-23 11:30:56.543 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 5 条文本生成混合向量
+2026-04-23 11:30:56.543 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=5
+2026-04-23 11:30:56.846 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件', 'PDF转Markdown', 'Markdown图片处理', '文档切分', '主体名称识别']
+2026-04-23 11:30:57.871 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 5 条文本向量生成完成
+2026-04-23 11:30:57.872 | INFO     | node_bge_embedding.py:step_3_generate_embeddings:176  - 第6-10条切片：双向量生成成功
+2026-04-23 11:30:57.873 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 2 条文本生成混合向量
+2026-04-23 11:30:57.874 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=2
+2026-04-23 11:30:58.449 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 2 条文本向量生成完成
+2026-04-23 11:30:58.450 | INFO     | node_bge_embedding.py:step_3_generate_embeddings:176  - 第11-12条切片：双向量生成成功
+2026-04-23 11:30:58.451 | INFO     | node_bge_embedding.py:node_bge_embedding:57   - --- BGE-M3 向量化处理完成，共处理 12 条文本切片 ---
+2026-04-23 11:30:58.452 | INFO     | file_import_service.py:run_graph_task :105  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph节点执行完成：node_bge_embedding
+2026-04-23 11:30:58.452 | INFO     | node_import_milvus.py:node_import_milvus:45   - >>> 开始执行LangGraph节点：node_import_milvus（Milvus切片数据入库）
+2026-04-23 11:30:58.453 | INFO     | node_import_milvus.py:node_import_milvus:48   - --- Milvus切片数据入库流程启动 ---
+2026-04-23 11:30:58.454 | INFO     | node_import_milvus.py:step_1_check_input:102  - Milvus入库校验通过，待入库切片数：12 | 向量维度：1024 | 商品名称：HUAWEIMateStationS12代酷睿版
+2026-04-23 11:30:58.455 | INFO     | node_import_milvus.py:step_2_prepare_collection:184  - 开始准备Milvus环境，目标集合：kb_chunks
+2026-04-23 11:30:58.491 | INFO     | node_import_milvus.py:step_2_prepare_collection:200  - Milvus集合kb_chunks已存在，直接复用
+2026-04-23 11:30:58.562 | INFO     | node_import_milvus.py:_clear_chunks_by_item_name:304  - Milvus幂等性清理：开始删除集合kb_chunks中item_name=HUAWEIMateStationS12代酷睿版的旧数据
+2026-04-23 11:30:58.849 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：processing，已完成节点：['开始上传文件', '检查文件', 'PDF转Markdown', 'Markdown图片处理', '文档切分', '主体名称识别', '向量生成']
+2026-04-23 11:30:59.545 | INFO     | node_import_milvus.py:_clear_chunks_by_item_name:316  - Milvus幂等性清理完成：成功删除item_name=HUAWEIMateStationS12代酷睿版的旧数据
+2026-04-23 11:30:59.546 | INFO     | node_import_milvus.py:step_4_insert_data:342  - Milvus数据插入：准备12条切片数据，开始批量插入
+2026-04-23 11:30:59.978 | INFO     | node_import_milvus.py:step_4_insert_data:346  - Milvus数据插入完成：成功插入12条数据，插入结果：{'insert_count': 12, 'ids': [465789195706441691, 465789195706441692, 465789195706441693, 465789195706441694, 465789195706441695, 465789195706441696, 465789195706441697, 465789195706441698, 465789195706441699, 465789195706441700, 465789195706441701, 465789195706441702]}
+2026-04-23 11:30:59.979 | INFO     | node_import_milvus.py:step_4_insert_data:351  - Milvus主键回填：开始将12个自增chunk_id回填到切片
+2026-04-23 11:30:59.980 | INFO     | node_import_milvus.py:step_4_insert_data:354  - Milvus主键回填完成：所有切片已绑定chunk_id
+2026-04-23 11:30:59.981 | INFO     | node_import_milvus.py:node_import_milvus:62   - --- Milvus切片数据入库流程完成 ---
+2026-04-23 11:30:59.982 | INFO     | file_import_service.py:run_graph_task :105  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph节点执行完成：node_import_milvus
+2026-04-23 11:30:59.982 | INFO     | file_import_service.py:run_graph_task :111  - [876f15d6-85cd-4035-8533-579b59ad7ab8] LangGraph全流程执行完毕，任务完成
+2026-04-23 11:31:00.853 | INFO     | file_import_service.py:get_task_progress:231  - [876f15d6-85cd-4035-8533-579b59ad7ab8] 任务状态查询，当前状态：completed，已完成节点：['开始上传文件', '检查文件', 'PDF转Markdown', 'Markdown图片处理', '文档切分', '主体名称识别', '向量生成', '导入向量库']
+2026-04-23 11:35:38.100 | INFO     | node_item_name_confirm.py:node_item_name_confirm:314  - >>> node_item_name_confirm: 开始处理
+2026-04-23 11:35:38.239 | INFO     | node_item_name_confirm.py:node_item_name_confirm:325  - Node: 获取到 0 条历史消息
+2026-04-23 11:35:38.273 | INFO     | node_item_name_confirm.py:step_3_extract_info:29   - Step 3: 开始提取信息 (LLM)
+2026-04-23 11:35:38.274 | INFO     | lm_utils.py         :get_llm_client :44   - [LLM客户端] 开始初始化新实例：模型=qwen-flash，JSON模式=True
+2026-04-23 11:35:39.140 | INFO     | lm_utils.py         :get_llm_client :71   - [LLM客户端] 实例初始化成功并缓存：模型=qwen-flash，JSON模式=True
+2026-04-23 11:35:39.141 | INFO     | node_item_name_confirm.py:step_3_extract_info:39   - Step 3: 历史上下文构建完成，长度: 0 字符
+2026-04-23 11:35:39.143 | INFO     | node_item_name_confirm.py:step_3_extract_info:56   - Step 3: 正在调用 LLM 进行提取...
+2026-04-23 11:35:40.035 | INFO     | node_item_name_confirm.py:step_3_extract_info:73   - Step 3: 提取结果解析成功 - 商品名: ['Brother HL-3070CW'], 重写问题: 如何更换 Brother HL-3070CW 的耗材？
+2026-04-23 11:35:40.037 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:85   - Step 4: 开始向量化检索，目标商品: ['Brother HL-3070CW']
+2026-04-23 11:35:40.158 | INFO     | milvus_utils.py     :get_milvus_client:27   - Milvus客户端连接成功
+2026-04-23 11:35:40.159 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:99   - Step 4: 正在生成 Embedding (Dense + Sparse)...
+2026-04-23 11:35:40.160 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 1 条文本生成混合向量
+2026-04-23 11:35:40.161 | INFO     | embedding_utils.py  :get_bge_m3_ef  :129  - 初始化 DashScope Embedding 适配器: model=text-embedding-v4, dim=1024
+2026-04-23 11:35:40.162 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=1
+2026-04-23 11:35:40.662 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 1 条文本向量生成完成
+2026-04-23 11:35:40.663 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:101  - Step 4: 向量生成完成，开始 Milvus 搜索 (Collection: kb_item_names)
+2026-04-23 11:35:40.761 | INFO     | milvus_utils.py     :hybrid_search  :192  - Milvus混合搜索完成，集合[kb_item_names]共检索到4条结果
+2026-04-23 11:35:40.762 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:145  - Step 4: 商品 'Brother HL-3070CW' 检索完成，找到 4 个匹配项
+2026-04-23 11:35:40.763 | INFO     | node_item_name_confirm.py:step_5_align_item_names:161  - Step 5: 开始对齐商品名 (Score Analysis)
+2026-04-23 11:35:40.764 | INFO     | node_item_name_confirm.py:step_5_align_item_names:179  - Step 5: 'Brother HL-3070CW' Top匹配: BrotherHL-3070CW彩色数码打印机(0.894), 华为Mate60Pro智能手机(0.609), RS-12数字万用表(0.605)
+2026-04-23 11:35:40.765 | INFO     | node_item_name_confirm.py:step_5_align_item_names:189  - Step 5: 规则A命中 (Single High) -> 确认: BrotherHL-3070CW彩色数码打印机
+2026-04-23 11:35:40.766 | INFO     | node_item_name_confirm.py:step_5_align_item_names:224  - Step 5: 对齐结果: {'confirmed_item_names': ['BrotherHL-3070CW彩色数码打印机'], 'options': []}
+2026-04-23 11:35:40.767 | INFO     | node_item_name_confirm.py:step_6_check_confirmation:232  - Step 6: 检查确认状态并更新 State
+2026-04-23 11:35:40.768 | INFO     | node_item_name_confirm.py:step_6_check_confirmation:243  - Step 6: [分支A] 存在确认商品名: ['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:35:40.769 | INFO     | node_item_name_confirm.py:step_7_write_history:283  - Step 7: 写入会话历史
+2026-04-23 11:35:40.770 | INFO     | node_item_name_confirm.py:step_7_write_history:297  - Step 7: 更新用户消息 (ID: 69e9938a3a35be0eebe9b19a)
+2026-04-23 11:35:40.805 | INFO     | node_item_name_confirm.py:node_item_name_confirm:360  - Node: 处理结束, Final State Item Names: ['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:35:40.808 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:156  - ---HyDE (假设文档检索) 节点开始处理---
+2026-04-23 11:35:40.808 | INFO     | node_web_search_mcp.py:node_web_search_mcp:111  - ---node_web_search_mcp 开始处理--
+2026-04-23 11:35:40.807 | INFO     | node_search_embedding.py:node_search_embedding:28   - ---search_milvus 开始处理---
+2026-04-23 11:35:40.818 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:171  - HyDE检索入参: query='如何更换 Brother HL-3070CW 的耗材？', item_names=['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:35:40.820 | INFO     | node_search_embedding.py:node_search_embedding:35   - 核心入参提取: query='如何更换 Brother HL-3070CW 的耗材？', item_names=['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:35:40.822 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:176  - Step 1: 开始生成假设性文档 (HyDE Doc)...
+2026-04-23 11:35:40.823 | INFO     | node_search_embedding.py:node_search_embedding:38   - 开始为“如何更换 Brother HL-3070CW 的耗材？”文本获取嵌入值...
+2026-04-23 11:35:40.824 | INFO     | node_search_embedding_hyde.py:step_1_create_hyde_doc:27   - Step 1: 开始生成假设性文档 (HyDE), Query: 如何更换 Brother HL-3070CW 的耗材？
+2026-04-23 11:35:40.824 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 1 条文本生成混合向量
+2026-04-23 11:35:40.825 | INFO     | lm_utils.py         :get_llm_client :44   - [LLM客户端] 开始初始化新实例：模型=qwen-flash，JSON模式=False
+2026-04-23 11:35:40.826 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=1
+2026-04-23 11:35:40.827 | INFO     | lm_utils.py         :get_llm_client :71   - [LLM客户端] 实例初始化成功并缓存：模型=qwen-flash，JSON模式=False
+2026-04-23 11:35:41.122 | INFO     | node_web_search_mcp.py:mcp_call       :87   - [MCP] 调用 Responses API + WebSearch MCP, query=如何更换 Brother HL-3070CW 的耗材？
+2026-04-23 11:35:41.426 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 1 条文本向量生成完成
+2026-04-23 11:35:41.427 | INFO     | node_search_embedding.py:node_search_embedding:51   - 正在连接到 Milvus 并准备集合 'kb_chunks'...
+2026-04-23 11:35:41.427 | INFO     | node_search_embedding.py:node_search_embedding:66   - 创建搜索请求过滤表达式: item_name in ["BrotherHL-3070CW彩色数码打印机"]
+2026-04-23 11:35:41.428 | INFO     | node_search_embedding.py:node_search_embedding:77   - 开始执行 Milvus 混合检索...
+2026-04-23 11:35:41.471 | INFO     | milvus_utils.py     :hybrid_search  :192  - Milvus混合搜索完成，集合[kb_chunks]共检索到5条结果
+2026-04-23 11:35:41.472 | INFO     | node_search_embedding.py:node_search_embedding:91   - 节点 search_embedding 处理成功，检索到 5 条相关片段
+2026-04-23 11:35:42.542 | INFO     | node_search_embedding_hyde.py:step_1_create_hyde_doc:40   - Step 1: 假设文档生成完成, 长度: 244 字符
+2026-04-23 11:35:42.543 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:178  - Step 1: 假设文档生成成功 (长度: 244)
+2026-04-23 11:35:42.544 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:187  - Step 2: 基于假设文档执行 Milvus 混合检索...
+2026-04-23 11:35:42.545 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:80   - Step 2: 拼接 Query + HyDE Doc, 总长度: 272
+2026-04-23 11:35:42.546 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:83   - Step 2: 正在生成混合向量 (Embedding)...
+2026-04-23 11:35:42.546 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 1 条文本生成混合向量
+2026-04-23 11:35:42.547 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=1
+2026-04-23 11:35:43.042 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 1 条文本向量生成完成
+2026-04-23 11:35:43.043 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:92   - Step 2: 准备在集合 'kb_chunks' 中执行混合检索
+2026-04-23 11:35:43.044 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:100  - Step 2: 应用过滤条件: item_name in ["BrotherHL-3070CW彩色数码打印机"]
+2026-04-23 11:35:43.045 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:119  - Step 2: 执行 Hybrid Search, Weights=(0.8, 0.2), TopK=5
+2026-04-23 11:35:43.087 | INFO     | milvus_utils.py     :hybrid_search  :192  - Milvus混合搜索完成，集合[kb_chunks]共检索到5条结果
+2026-04-23 11:35:43.089 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:131  - Step 2: 检索完成, 找到 5 个匹配切片
+2026-04-23 11:35:43.090 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:196  - Step 2: 检索完成，召回 5 条相关切片
+2026-04-23 11:35:43.091 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:215  - ---HyDE 节点处理结束---
+2026-04-23 11:36:09.212 | INFO     | node_web_search_mcp.py:mcp_call       :106  - [MCP] 结构化搜索结果数量: 5
+2026-04-23 11:36:09.213 | INFO     | node_web_search_mcp.py:node_web_search_mcp:126  - ---node_web_search_mcp 处理结束---
+2026-04-23 11:36:09.215 | INFO     | node_rrf.py         :node_rrf       :152  - ---RRF (倒数排名融合) 开始处理---
+2026-04-23 11:36:09.217 | INFO     | node_rrf.py         :node_rrf       :162  - RRF 输入统计: Embedding源=5条, HyDE源=5条
+2026-04-23 11:36:09.219 | INFO     | node_rerank.py      :node_rerank    :251  - ---Rerank (重排序) 节点开始处理---
+2026-04-23 11:36:09.220 | INFO     | node_rerank.py      :step_1_merge_docs:46   - Step 1: 开始合并文档 - 本地RRF源: 7条, 联网Web源: 5条
+2026-04-23 11:36:09.222 | INFO     | node_rerank.py      :step_1_merge_docs:108  - Step 1: 文档合并完成，共输出 12 条标准化文档
+2026-04-23 11:36:09.223 | INFO     | node_rerank.py      :step_2_rerank_docs:125  - Step 2: 开始重排序 (Rerank), 待排序文档数: 12
+2026-04-23 11:36:09.224 | INFO     | reranker_utils.py   :get_reranker_model:86   - 初始化 DashScope Rerank 适配器: model=gte-rerank-v2
+2026-04-23 11:36:09.226 | INFO     | node_rerank.py      :step_2_rerank_docs:155  - Step 2: 正在计算相关性得分...
+2026-04-23 11:36:09.227 | INFO     | reranker_utils.py   :_call_rerank   :44   - 调用 DashScope Rerank API: model=gte-rerank-v2, docs=12
+2026-04-23 11:36:09.795 | INFO     | node_rerank.py      :step_3_topk    :229  - Step 3: 触发断崖截断 @ index=0 (Score 0.9292 -> 0.6573, Gap=0.2719)
+2026-04-23 11:36:09.796 | INFO     | node_rerank.py      :step_3_topk    :236  - Step 3: 截断完成，保留前 1 条文档 (TopK=1)
+2026-04-23 11:36:09.797 | INFO     | node_rerank.py      :node_rerank    :261  - Rerank 节点处理结束, 最终输出 1 条文档
+2026-04-23 11:36:09.798 | INFO     | node_answer_output.py:node_answer_output:301  - ---node_answer_output (答案生成) 节点开始处理---
+2026-04-23 11:36:09.800 | INFO     | node_answer_output.py:step_2_construct_prompt:134  - 组装后的提示词为：你是一个智能助手，请根据参考内容回答用户的问题。
+要求：
+1 尽量基于【参考内容】和【用户问题】 作答，不要编造不存在的事实。
+2 如果用户的问题需要通过图片来辅助说明（例如：外观、结构、接线、示意图等）,图片只能来自于本地切片文本中的图片，请在答案最后追加一个独立的图片区块，格式严格如下：
+【图片】
+<图片URL1>
+<图片URL2>
+（每行一个URL；如果没有合适图片则不要输出【图片】区块）
+
+【参考内容】
+[1] [web] [url=https://www.bilibili.com/video/BV1xx411k7zP] [score=0.9292] [title=HL-3070CW 硒鼓更换视频教程 - 哔哩哔哩]
+视频演示 Brother HL-3070CW 激光打印机更换耗材的全过程，包含复位操作提示，适合新手参考。
+
+【历史对话】
+无历史对话
+
+【相关商品/实体】
+BrotherHL-3070CW彩色数码打印机
+
+【用户问题】
+如何更换 Brother HL-3070CW 的耗材？
+
+请回答：
+2026-04-23 11:36:09.802 | INFO     | node_answer_output.py:step_3_generate_response:144  - ---Step 3: 开始生成回答 (LLM Generation)---
+2026-04-23 11:36:09.803 | INFO     | node_answer_output.py:step_3_generate_response:157  - 模式: 流式输出 (Streaming), Session: sess-54oeap3kqxmo9uwg46
+2026-04-23 11:36:11.807 | INFO     | node_answer_output.py:step_3_generate_response:168  - 流式输出完成，总长度: 313
+2026-04-23 11:36:11.808 | INFO     | node_answer_output.py:_extract_images_from_docs:224  - 开始提取图片，待处理文档数: 1
+2026-04-23 11:36:11.809 | INFO     | node_answer_output.py:_extract_images_from_docs:254  - 图片提取完成，共找到 0 张唯一图片: []
+2026-04-23 11:36:11.810 | INFO     | node_answer_output.py:node_answer_output:320  - ---写入MongoDB历史记录---
+2026-04-23 11:36:11.847 | INFO     | node_answer_output.py:node_answer_output:326  - ---发送 final 事件---图片为：[]
+2026-04-23 11:36:11.849 | INFO     | node_answer_output.py:node_answer_output:338  - ---node_answer_output 节点处理结束---
+2026-04-23 11:37:56.253 | INFO     | node_item_name_confirm.py:node_item_name_confirm:314  - >>> node_item_name_confirm: 开始处理
+2026-04-23 11:37:56.291 | INFO     | node_item_name_confirm.py:node_item_name_confirm:325  - Node: 获取到 2 条历史消息
+2026-04-23 11:37:56.325 | INFO     | node_item_name_confirm.py:step_3_extract_info:29   - Step 3: 开始提取信息 (LLM)
+2026-04-23 11:37:56.326 | INFO     | node_item_name_confirm.py:step_3_extract_info:39   - Step 3: 历史上下文构建完成，长度: 354 字符
+2026-04-23 11:37:56.328 | INFO     | node_item_name_confirm.py:step_3_extract_info:56   - Step 3: 正在调用 LLM 进行提取...
+2026-04-23 11:37:57.139 | INFO     | node_item_name_confirm.py:step_3_extract_info:73   - Step 3: 提取结果解析成功 - 商品名: ['Brother HL-3070CW'], 重写问题: 如何更换 Brother HL-3070CW 的墨粉盒？
+2026-04-23 11:37:57.140 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:85   - Step 4: 开始向量化检索，目标商品: ['Brother HL-3070CW']
+2026-04-23 11:37:57.141 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:99   - Step 4: 正在生成 Embedding (Dense + Sparse)...
+2026-04-23 11:37:57.142 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 1 条文本生成混合向量
+2026-04-23 11:37:57.143 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=1
+2026-04-23 11:37:57.762 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 1 条文本向量生成完成
+2026-04-23 11:37:57.763 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:101  - Step 4: 向量生成完成，开始 Milvus 搜索 (Collection: kb_item_names)
+2026-04-23 11:37:57.804 | INFO     | milvus_utils.py     :hybrid_search  :192  - Milvus混合搜索完成，集合[kb_item_names]共检索到4条结果
+2026-04-23 11:37:57.805 | INFO     | node_item_name_confirm.py:step_4_vectorize_and_query:145  - Step 4: 商品 'Brother HL-3070CW' 检索完成，找到 4 个匹配项
+2026-04-23 11:37:57.806 | INFO     | node_item_name_confirm.py:step_5_align_item_names:161  - Step 5: 开始对齐商品名 (Score Analysis)
+2026-04-23 11:37:57.807 | INFO     | node_item_name_confirm.py:step_5_align_item_names:179  - Step 5: 'Brother HL-3070CW' Top匹配: BrotherHL-3070CW彩色数码打印机(0.894), 华为Mate60Pro智能手机(0.609), RS-12数字万用表(0.605)
+2026-04-23 11:37:57.808 | INFO     | node_item_name_confirm.py:step_5_align_item_names:189  - Step 5: 规则A命中 (Single High) -> 确认: BrotherHL-3070CW彩色数码打印机
+2026-04-23 11:37:57.809 | INFO     | node_item_name_confirm.py:step_5_align_item_names:224  - Step 5: 对齐结果: {'confirmed_item_names': ['BrotherHL-3070CW彩色数码打印机'], 'options': []}
+2026-04-23 11:37:57.810 | INFO     | node_item_name_confirm.py:step_6_check_confirmation:232  - Step 6: 检查确认状态并更新 State
+2026-04-23 11:37:57.811 | INFO     | node_item_name_confirm.py:step_6_check_confirmation:243  - Step 6: [分支A] 存在确认商品名: ['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:37:57.812 | INFO     | node_item_name_confirm.py:step_7_write_history:283  - Step 7: 写入会话历史
+2026-04-23 11:37:57.813 | INFO     | node_item_name_confirm.py:step_7_write_history:297  - Step 7: 更新用户消息 (ID: 69e994143a35be0eebe9b19c)
+2026-04-23 11:37:57.847 | INFO     | node_item_name_confirm.py:node_item_name_confirm:360  - Node: 处理结束, Final State Item Names: ['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:37:57.850 | INFO     | node_search_embedding.py:node_search_embedding:28   - ---search_milvus 开始处理---
+2026-04-23 11:37:57.850 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:156  - ---HyDE (假设文档检索) 节点开始处理---
+2026-04-23 11:37:57.851 | INFO     | node_web_search_mcp.py:node_web_search_mcp:111  - ---node_web_search_mcp 开始处理--
+2026-04-23 11:37:57.852 | INFO     | node_search_embedding.py:node_search_embedding:35   - 核心入参提取: query='如何更换 Brother HL-3070CW 的墨粉盒？', item_names=['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:37:57.853 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:171  - HyDE检索入参: query='如何更换 Brother HL-3070CW 的墨粉盒？', item_names=['BrotherHL-3070CW彩色数码打印机']
+2026-04-23 11:37:57.853 | INFO     | node_web_search_mcp.py:mcp_call       :87   - [MCP] 调用 Responses API + WebSearch MCP, query=如何更换 Brother HL-3070CW 的墨粉盒？
+2026-04-23 11:37:57.855 | INFO     | node_search_embedding.py:node_search_embedding:38   - 开始为“如何更换 Brother HL-3070CW 的墨粉盒？”文本获取嵌入值...
+2026-04-23 11:37:57.856 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:176  - Step 1: 开始生成假设性文档 (HyDE Doc)...
+2026-04-23 11:37:57.858 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 1 条文本生成混合向量
+2026-04-23 11:37:57.859 | INFO     | node_search_embedding_hyde.py:step_1_create_hyde_doc:27   - Step 1: 开始生成假设性文档 (HyDE), Query: 如何更换 Brother HL-3070CW 的墨粉盒？
+2026-04-23 11:37:57.860 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=1
+2026-04-23 11:37:58.340 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 1 条文本向量生成完成
+2026-04-23 11:37:58.341 | INFO     | node_search_embedding.py:node_search_embedding:51   - 正在连接到 Milvus 并准备集合 'kb_chunks'...
+2026-04-23 11:37:58.341 | INFO     | node_search_embedding.py:node_search_embedding:66   - 创建搜索请求过滤表达式: item_name in ["BrotherHL-3070CW彩色数码打印机"]
+2026-04-23 11:37:58.342 | INFO     | node_search_embedding.py:node_search_embedding:77   - 开始执行 Milvus 混合检索...
+2026-04-23 11:37:58.385 | INFO     | milvus_utils.py     :hybrid_search  :192  - Milvus混合搜索完成，集合[kb_chunks]共检索到5条结果
+2026-04-23 11:37:58.386 | INFO     | node_search_embedding.py:node_search_embedding:91   - 节点 search_embedding 处理成功，检索到 5 条相关片段
+2026-04-23 11:37:59.085 | INFO     | node_search_embedding_hyde.py:step_1_create_hyde_doc:40   - Step 1: 假设文档生成完成, 长度: 131 字符
+2026-04-23 11:37:59.086 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:178  - Step 1: 假设文档生成成功 (长度: 131)
+2026-04-23 11:37:59.087 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:187  - Step 2: 基于假设文档执行 Milvus 混合检索...
+2026-04-23 11:37:59.088 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:80   - Step 2: 拼接 Query + HyDE Doc, 总长度: 160
+2026-04-23 11:37:59.088 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:83   - Step 2: 正在生成混合向量 (Embedding)...
+2026-04-23 11:37:59.089 | INFO     | embedding_utils.py  :generate_embeddings:141  - 开始为 1 条文本生成混合向量
+2026-04-23 11:37:59.090 | INFO     | embedding_utils.py  :_encode        :82   - 调用 DashScope Embedding API: model=text-embedding-v4, text_type=document, count=1
+2026-04-23 11:37:59.566 | SUCCESS  | embedding_utils.py  :generate_embeddings:145  - 1 条文本向量生成完成
+2026-04-23 11:37:59.567 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:92   - Step 2: 准备在集合 'kb_chunks' 中执行混合检索
+2026-04-23 11:37:59.568 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:100  - Step 2: 应用过滤条件: item_name in ["BrotherHL-3070CW彩色数码打印机"]
+2026-04-23 11:37:59.569 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:119  - Step 2: 执行 Hybrid Search, Weights=(0.8, 0.2), TopK=5
+2026-04-23 11:37:59.611 | INFO     | milvus_utils.py     :hybrid_search  :192  - Milvus混合搜索完成，集合[kb_chunks]共检索到5条结果
+2026-04-23 11:37:59.612 | INFO     | node_search_embedding_hyde.py:step_2_search_embedding_hyde:131  - Step 2: 检索完成, 找到 5 个匹配切片
+2026-04-23 11:37:59.613 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:196  - Step 2: 检索完成，召回 5 条相关切片
+2026-04-23 11:37:59.614 | INFO     | node_search_embedding_hyde.py:node_search_embedding_hyde:215  - ---HyDE 节点处理结束---
+2026-04-23 11:38:18.488 | INFO     | node_web_search_mcp.py:mcp_call       :106  - [MCP] 结构化搜索结果数量: 5
+2026-04-23 11:38:18.489 | INFO     | node_web_search_mcp.py:node_web_search_mcp:126  - ---node_web_search_mcp 处理结束---
+2026-04-23 11:38:18.491 | INFO     | node_rrf.py         :node_rrf       :152  - ---RRF (倒数排名融合) 开始处理---
+2026-04-23 11:38:18.492 | INFO     | node_rrf.py         :node_rrf       :162  - RRF 输入统计: Embedding源=5条, HyDE源=5条
+2026-04-23 11:38:18.494 | INFO     | node_rerank.py      :node_rerank    :251  - ---Rerank (重排序) 节点开始处理---
+2026-04-23 11:38:18.495 | INFO     | node_rerank.py      :step_1_merge_docs:46   - Step 1: 开始合并文档 - 本地RRF源: 7条, 联网Web源: 5条
+2026-04-23 11:38:18.497 | INFO     | node_rerank.py      :step_1_merge_docs:108  - Step 1: 文档合并完成，共输出 12 条标准化文档
+2026-04-23 11:38:18.498 | INFO     | node_rerank.py      :step_2_rerank_docs:125  - Step 2: 开始重排序 (Rerank), 待排序文档数: 12
+2026-04-23 11:38:18.499 | INFO     | node_rerank.py      :step_2_rerank_docs:155  - Step 2: 正在计算相关性得分...
+2026-04-23 11:38:18.500 | INFO     | reranker_utils.py   :_call_rerank   :44   - 调用 DashScope Rerank API: model=gte-rerank-v2, docs=12
+2026-04-23 11:38:19.039 | INFO     | node_rerank.py      :step_3_topk    :229  - Step 3: 触发断崖截断 @ index=2 (Score 0.7316 -> 0.5206, Gap=0.2110)
+2026-04-23 11:38:19.040 | INFO     | node_rerank.py      :step_3_topk    :236  - Step 3: 截断完成，保留前 3 条文档 (TopK=3)
+2026-04-23 11:38:19.041 | INFO     | node_rerank.py      :node_rerank    :261  - Rerank 节点处理结束, 最终输出 3 条文档
+2026-04-23 11:38:19.042 | INFO     | node_answer_output.py:node_answer_output:301  - ---node_answer_output (答案生成) 节点开始处理---
+2026-04-23 11:38:19.044 | INFO     | node_answer_output.py:step_2_construct_prompt:134  - 组装后的提示词为：你是一个智能助手，请根据参考内容回答用户的问题。
+要求：
+1 尽量基于【参考内容】和【用户问题】 作答，不要编造不存在的事实。
+2 如果用户的问题需要通过图片来辅助说明（例如：外观、结构、接线、示意图等）,图片只能来自于本地切片文本中的图片，请在答案最后追加一个独立的图片区块，格式严格如下：
+【图片】
+<图片URL1>
+<图片URL2>
+（每行一个URL；如果没有合适图片则不要输出【图片】区块）
+
+【参考内容】
+[1] [web] [url=https://www.zhihu.com/question/123456789] [score=0.9523] [title=Brother HL-3070CW 打印机更换墨粉盒图文教程]
+详细图解 Brother HL-3070CW 黑白激光打印机的墨粉盒更换方法，包含黑色及彩色硒鼓的更换注意事项。
+
+[2] [web] [url=https://www.manualslib.com/manual/123456/Brother-HL-3070CW.html] [score=0.8159] [title=Brother HL-3070CW Toner Cartridge Replacement Guide]
+Step-by-step instructions for replacing the toner cartridges on the Brother HL-3070CW laser printer.
+
+[3] [local] [chunk_id=465789195706441605] [score=0.7316] [title=BrotherHL-3070CW彩色数码打印机]
+# 更换墨粉盒
+
+![HL3070打印机更换墨粉盒提示及使用建议说明](http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/ea7267b93479c28a2d1f6ad5ce630ade600e69c8bdc9df3f2264fd295ae314c9.jpg)
+
+
+# 注释
+
+• 为确保高质量打印， Brother 建议您只使用 Brother 正品墨粉盒。当您想购买墨粉盒时，请联系 Brother 客服中心。  
+• Brother 建议您更换墨粉盒时清洁打印机。请参阅第 133 页上的清洁。
+
+a 关闭打印机电源开关。握住把手 (1) 向上提起以完全打开顶盖。
+
+![打开打印机顶盖操作示意图：按压把手向上掀开顶盖（标号1），准备更换硒鼓或墨粉盒。](http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/de2bbab6dd0b5f1d1ccb21e819d8780e0323afa3182fef9fb75dd6ebdfd45364.jpg)
+
+b 根据液晶显示屏上显示的信息取出相应颜色的硒鼓单元和墨粉盒组件。
+
+![取出硒鼓单元：按下绿色锁定杆，沿蓝色箭头方向将硒鼓单元从打印机中拉出。](http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/3907dd3c8cadd22015d640ad528b5ba4b7bd3d3bf3b2aeb28f1b355cb64ca5a4.jpg)
+
+c 按下绿色锁定杆 (1) 并从硒鼓单元中取出墨粉盒。
+
+![按下绿色锁定杆（1）并取出硒鼓单元中的墨粉盒，注意勿投入火中以防爆炸。](http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/583b6b250518bbbc5c135a9ff190241dfcd5308319951ae1d332ef271afb4277.jpg)
+
+【历史对话】
+用户: BrotherHL-3070CW怎么更换耗材
+助手: 更换 Brother HL-3070CW 的耗材（如硒鼓）可参考以下步骤，具体操作建议结合视频教程进行：
+
+1. 打开打印机前盖，等待打印头移动到中间位置。
+2. 取出旧的硒鼓组件，注意不要触碰感光鼓表面，避免留下指纹或划伤。
+3. 拆下新硒鼓的包装，并轻轻摇晃几下以均匀碳粉。
+4. 将新硒鼓沿导轨插入打印机，确保安装到位并听到“咔哒”声。
+5. 关闭前盖，打印机将自动识别新硒鼓。
+6. 如需复位计数器，根据提示进行复位操作（视频中会详细演示）。
+
+建议观看【参考内容】中的视频教程以获得更直观的操作指导。
+
+【图片】
+https://www.bilibili.com/video/BV1xx411k7zP/pic.jpg
+
+
+【相关商品/实体】
+BrotherHL-3070CW彩色数码打印机
+
+【用户问题】
+如何更换 Brother HL-3070CW 的墨粉盒？
+
+请回答：
+2026-04-23 11:38:19.044 | INFO     | node_answer_output.py:step_3_generate_response:144  - ---Step 3: 开始生成回答 (LLM Generation)---
+2026-04-23 11:38:19.046 | INFO     | node_answer_output.py:step_3_generate_response:157  - 模式: 流式输出 (Streaming), Session: sess-54oeap3kqxmo9uwg46
+2026-04-23 11:38:25.246 | INFO     | node_answer_output.py:step_3_generate_response:168  - 流式输出完成，总长度: 1082
+2026-04-23 11:38:25.247 | INFO     | node_answer_output.py:_extract_images_from_docs:224  - 开始提取图片，待处理文档数: 3
+2026-04-23 11:38:25.249 | INFO     | node_answer_output.py:_extract_images_from_docs:254  - 图片提取完成，共找到 4 张唯一图片: ['http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/ea7267b93479c28a2d1f6ad5ce630ade600e69c8bdc9df3f2264fd295ae314c9.jpg', 'http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/de2bbab6dd0b5f1d1ccb21e819d8780e0323afa3182fef9fb75dd6ebdfd45364.jpg', 'http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/3907dd3c8cadd22015d640ad528b5ba4b7bd3d3bf3b2aeb28f1b355cb64ca5a4.jpg', 'http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/583b6b250518bbbc5c135a9ff190241dfcd5308319951ae1d332ef271afb4277.jpg']
+2026-04-23 11:38:25.250 | INFO     | node_answer_output.py:node_answer_output:320  - ---写入MongoDB历史记录---
+2026-04-23 11:38:25.285 | INFO     | node_answer_output.py:node_answer_output:326  - ---发送 final 事件---图片为：['http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/ea7267b93479c28a2d1f6ad5ce630ade600e69c8bdc9df3f2264fd295ae314c9.jpg', 'http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/de2bbab6dd0b5f1d1ccb21e819d8780e0323afa3182fef9fb75dd6ebdfd45364.jpg', 'http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/3907dd3c8cadd22015d640ad528b5ba4b7bd3d3bf3b2aeb28f1b355cb64ca5a4.jpg', 'http://43.136.15.96:9000/knowledge-base-files/upload-images/hl3070使用说明书/583b6b250518bbbc5c135a9ff190241dfcd5308319951ae1d332ef271afb4277.jpg']
+2026-04-23 11:38:25.286 | INFO     | node_answer_output.py:node_answer_output:338  - ---node_answer_output 节点处理结束---
